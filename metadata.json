@@ -1,0 +1,12 @@
+{
+  "name": "ArrangerFlow AI",
+  "description": "Symbolic Arranger Workstation Prototype (MID/STY → SF2 Playback & AFX Export)",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "AI-Powered Audio Analysis",
+    "MIDI Workflow",
+    "Section-Based Arrangement"
+  ]
+}
