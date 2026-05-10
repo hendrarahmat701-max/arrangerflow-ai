@@ -17,3 +17,19 @@
   --color-hw-muted: #8E9299;
   --color-hw-text-dark: #4A4B50;
 }
+
+body {
+  @apply bg-hw-bg text-white font-sans;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full;
+}

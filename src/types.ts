@@ -4,7 +4,7 @@ export type Variation = 'A' | 'B' | 'C' | 'D';
 export interface MidiNote {
   pitch: number;
   velocity: number;
-  start: number; // in ticks or ratio
+  start: number;
   duration: number;
 }
 
@@ -137,7 +137,7 @@ export const INITIAL_PROJECT: Project = {
   ],
   sections: [
     { 
-      id: '主A', 
+      id: 'sec-1', 
       type: 'Main', 
       variation: 'A', 
       bars: 4, 
@@ -151,7 +151,7 @@ export const INITIAL_PROJECT: Project = {
       ]
     },
     { 
-      id: '主B', 
+      id: 'sec-2', 
       type: 'Main', 
       variation: 'B', 
       bars: 4, 
@@ -162,19 +162,6 @@ export const INITIAL_PROJECT: Project = {
       lanes: [
         { id: 'l3', role: 'Drum', midiChannel: 10, muted: false, notes: [] },
         { id: 'l4', role: 'Bass', midiChannel: 2, muted: false, notes: [] },
-      ]
-    },
-    { 
-      id: 'F1', 
-      type: 'Fill', 
-      variation: 'A', 
-      bars: 1, 
-      tempo: 120, 
-      key: 'C', 
-      chordProgression: ['G'],
-      groove: { intensity: 95, swing: 0, humanize: 15 },
-      lanes: [
-        { id: 'l5', role: 'Drum', midiChannel: 10, muted: false, notes: [] },
       ]
     },
   ],
